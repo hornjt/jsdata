@@ -1,4 +1,4 @@
-'use strict'; 
+"use strict";
 
 app.config(function($stateProvider) {
 	$stateProvider.state('create', {
@@ -9,17 +9,26 @@ app.config(function($stateProvider) {
 				add a resolve block that has an author function which 
 				users $stateParams to retrieve the author object
 		*/
-	})
-})
+	});
+});
 
 // add necessary dependencies here 
-app.controller('CreateCtrl', function($scope) {
+app.controller('CreateCtrl', function($scope, Post) {
 
 	$scope.previewTrue = false;
 
 	$scope.preview = function() {
 		$scope.previewTrue = !$scope.previewTrue;
-	}
+	};
+	// console.log($scope.newPost);
+
+	
+
+	$scope.createNewPost = function() {
+		console.log($scope.newPost);
+		Post.create($scope.newPost);
+	};
+	console.log(Post);
 
 	/*
 

@@ -30,6 +30,7 @@ app.controller('PostCtrl', function() {
 	*/
 
 	/*
+		***** IGNORE *****
 		3. EDIT POST 
 		create a function that edits the post, adds an alert that the post has been 
 		successfully edited, and displays the edited post.  

@@ -10,7 +10,7 @@ var app = angular.module('jsdataWorkshop', ['js-data', 'ui.router'])
     // this way we keep our code as DRY as possible
     DSProvider.defaults.basePath = '/api';
     DSProvider.defaults.idAttribute = '_id';
-})
+});
 
 
 
